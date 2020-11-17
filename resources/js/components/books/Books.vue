@@ -4,15 +4,10 @@
         <p>Our list of books</p>
         <div v-if="loading" class="spinner-border text-primary" role="status"></div>
         <div v-else class=" row d-flex align-items-stretch">
-            <book-card class="col col-lg-3 col-md-6 col-12"
+            <book-card class="col col-lg-4 col-md-6 col-12 hoverable"
                 v-for="book in books"
                 :key="book.book_id"
-                :book_id="book.book_id"
-                :book_title="book.book_title"
-                :author="book.author"
-                :description="book.description"
-                :price="book.price"
-                :release_date="book.release_date"
+                v-bind="book"
             ></book-card>
         </div>
     </div>
