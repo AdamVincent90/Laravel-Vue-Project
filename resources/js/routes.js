@@ -1,19 +1,18 @@
 import VueRouter from "vue-router";
-import Bookables from "./components/bookables/Bookables";
-import ExampleComponent2 from "./components/ExampleComponent2.vue";
+import Books from "./components/books/Books";
+import Book from "./components/book/Book";
 
 const routes = [
     {
         path: "/",
-        component: Bookables,
-        name: "home"
+        component: Books,
+        name: "books"
     },
     {
-        path: "/about",
-        component: ExampleComponent2,
-        name: "about"
+        path: "/books/:book_id",
+        component: Book,
+        name: "book"
     }
-    
 ];
 
 const router = new VueRouter({

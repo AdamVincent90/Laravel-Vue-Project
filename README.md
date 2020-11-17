@@ -1,3 +1,11 @@
+## Book Store
+
+This is a web application I am currently developing that incorperates Vue.js with Axios and Laravel to help develop my learning with these popular PHP and Javascript Frameworks.
+
+This application will be a personal book store that includes functionality such as booking, transactions, payment, reactive components in vue, and a secure API.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

@@ -17,8 +17,9 @@ class CreateBooksTable extends Migration
             $table->id('book_id')->autoIncrement();
             $table->string('book_title');
             $table->string('author');
+            $table->string('description');
             $table->date('release_date');
-            $table->decimal('price');
+            $table->integer('price');
             $table->timestamps();
         });
     }

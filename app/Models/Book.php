@@ -16,5 +16,5 @@ class Book extends Model
         'price'
     ];
 
-    protected $id = 'book_id';
+    protected $primaryKey = 'book_id';
 }
