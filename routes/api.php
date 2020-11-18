@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\BookController;
+use \App\Http\Controllers\BookAvailabilityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('/books', BookController::class);
+Route::get('/books/{book}/availability', BookAvailabilityController::class)->name('book.availability.show');

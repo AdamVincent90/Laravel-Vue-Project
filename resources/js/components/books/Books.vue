@@ -6,7 +6,7 @@
         <div v-else class=" row d-flex align-items-stretch">
             <book-card class="col col-lg-4 col-md-6 col-12 hoverable"
                 v-for="book in books"
-                :key="book.book_id"
+                :key="book.id"
                 v-bind="book"
             ></book-card>
         </div>

@@ -15,7 +15,7 @@ class BookShowResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'book_id' => $this->book_id,
+            'book_id' => $this->id,
             'book_title' => $this->book_title,
             'description' => $this->description,
             'release_date' => date("d/m/Y", strtotime($this->release_date)),
