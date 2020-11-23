@@ -33,7 +33,7 @@ class BookRentalSeeder extends Seeder
                 $book_rentals->push($book_rental);
             }
 
-            $book->book_rentals()->saveMany($book_rentals);
+            $book->book_rental()->saveMany($book_rentals);
         });
     }
 }

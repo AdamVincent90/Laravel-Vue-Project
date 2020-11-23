@@ -19,12 +19,14 @@
             <div class="col-lg-4 pt-2 col-sm-12 pl-0">
                 <check-stock></check-stock>
             </div>
+            <review-list></review-list>
         </div>
 </template>
 
 <script>
 
 import CheckStock from "./CheckStock";
+import ReviewList from "./ReviewList";
 
 export default {
     data() {
@@ -35,7 +37,8 @@ export default {
         }
     },
     components: {
-        CheckStock
+        CheckStock,
+        ReviewList
     },
     created() {
         

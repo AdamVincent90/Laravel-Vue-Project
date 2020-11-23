@@ -19,6 +19,10 @@ class BookRental extends Model
         return $this->belongsTo(Book::class);
     }
 
+    public function review() {
+        return $this->hasOne(Review::class);
+    }
+
     public function scopeBetweenDates(Builder $query, $start_date, $end_date) {
         return $query->where('end_date', '>=', $start_date)->where('start_date', '<=', $end_date);
     }

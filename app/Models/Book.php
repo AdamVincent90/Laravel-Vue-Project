@@ -16,13 +16,17 @@ class Book extends Model
         'price'
     ];
 
-    public function book_rentals() {
+    public function book_rental() {
         return $this->hasMany(BookRental::class);
+    }
+
+    public function review() {
+        return $this->hasMany(Review::class);
     }
 
     public function bookAvailability($start_date, $end_date): bool
     {
         // Get all book rentals where book id = $id with scope function that detects overlap from user input, and counts
-        return 0 === $this->book_rentals()->betweenDates($start_date, $end_date)->count();
+        return 0 === $this->book_rental()->betweenDates($start_date, $end_date)->count();
     }
 }
